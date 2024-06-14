@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>BLOG-1</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<style>
+   /* Button */
+ .btn {
+  border: 2px solid black;
+  border-radius: 15px;
+   background-image: linear-gradient(to right, #4888c0 , #5ecdde);
+  color: black;
+  padding: 14px 28px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Green */
+.light {
+  border-color: #1f89ba ;
+  color: white;
+}
+
+.light:hover {
+   background-image: linear-gradient(to left, #4888c0 , #5ecdde);
+  color: white;
+}
+
+  /* Button */
+
+
+
+
+      .nav-item{
+        font-family: 'san-franciso';
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: bold;
+      }
+      li{
+        padding: 10px;
+       
+        
+      }
+     nav .navbar-nav .nav-item li a {
+        color: #f1917f;
+      }
+      a:hover{
+        color: #fff;
+    text-decoration: none;
+      }
+
+.buto{
+  display: inline-block;
+    color: #888;
+    letter-spacing: .3px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1;
+}
+
+
+    
+    
+
+
+
+      p{
+        font-family: 'Poppins', sans-serif; 
+       }
+
+
+      h1 h2 h3 h5 h4 h5{font-family:'IBM Plex Serif', serif;
+    font-weight: 400;}
+     
+  
+     
+
+
+
+/* transitions */
+
+    .light {
+  position: relative;
+  background-image: linear-gradient(to left, #4888c0 , #5ecdde);
+  z-index: 1;
+}
+
+.light::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to right, #4888c0 , #5ecdde);
+  z-index: -1;
+  transition: opacity 0.2s linear;
+  opacity: 0;
+}
+.light:hover::before {
+  opacity: 1;
+  color: white;
+}
+
+</style>
+
+ </head>
+  <body class="container-fluid"> 
+      
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    
+    <div class="row" style=" position: sticky; top: 0px;z-index: 99; font-family:'IBM Plex Serif', serif;">
+      <nav class="navbar navbar-expand-lg navbar-dark" style="padding: 10px;  background: linear-gradient(to right, #1f89ba , #5ecdde); font-weight: bold;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"> <img src="image/abc.png" style="height: 70px;"/> Vertex ststem </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html" class="home">HOME</a>
+              </li>
+              <li class="nav-item" style="font-family: 'Rubik', sans-serif;">
+                <a class="nav-link" href="about.html">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contactus.html">CONTACT US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="doctor.html">DOCTOR</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  VIRUSES
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  
+                  <li><a class="dropdown-item" href="covid-19.html">COVID-19</a></li>
+                  <li><a class="dropdown-item" href="polio.html">POLIO</a></li>
+                  <li><a class="dropdown-item" href="fever.html">FEVER</a></li>
+                  <li><a class="dropdown-item" href="ch-pox.html">CHICKENPOX</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+     </div>
+       
+       
+       <div style="background-image: linear-gradient(to right, #1f89ba , #5ecdde);height: 700px; font-family: 'Rubik', sans-serif;color: #fff;" class="row">
+       
+        <div>
+          <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+            <ol class="breadcrumb justify-content-center">
+              <li class="breadcrumb-item"><a href="blog-1.html" style="color: white;"> BLOG-01 </a></li>
+              <li class="breadcrumb-item active" aria-current="page" style="color: white;"> Virus of the month </li>
+            </ol>
+          </nav>
+        </div>
+
+<div class="col-md-6 col-xs-12" >
+    <img src="image/i1.png" alt="" style="height: 690PX;" class="img-responsive">
+
+</div>
+      </div>
+
+<br><br>
+<div class="container">
+    <div>
+        <img src="image/p9.png" alt="" style="width: 100%;height: auto;">
+    </div>
+<br><br>
+
+    <h2>The virus of the month: Rhinovirus</h2>
+    <br>
+
+    <p>
+      Today we are highlighting perhaps the most inconspicuous and well known guilty party of the normal cold: Rhinovirus. Rhinovirus: Causing most upper respiratory infections, this bug prefers the cold, which is why the cold virus remains so prevalent in the fall and winter. This virus is very difficult and can be easily spread by sneezing, coughing and even touching contaminated surfaces. Rhinovirus infections usually cause mild symptoms, such as a runny nose, sore throat, and cough, but they can be more severe in people with asthma or weakened immune systems. While it seems to be a fact of life and is an annoyance to say the least, the better news is most people recover in just a few days with rest, hydration, and over the counter solutions. I was reminded as we transition another month into a different season of what it can be like to be an adult with ADHD trying to regulatoryange patterns. 
+    </p>
+
+    <br><br>
+    <div class="row">
+   
+        <div class="col-6"> 
+            <img src="image/p-10.png" alt="" style="width: 80%;height: 350px;" >
+        </div>
+        <div class="col-6">
+            <p> <b> Prevalence: </b> <br>
+                The majority of cases of the common cold are due to rhinovirus, the most prevalent of the upper respiratory infections.  <br> <br>
+
+                <b> Seasonality: </b> <br>
+                Infection is highest in the colder months of fall and winter because the virus likes lower temperatures. <br> <br>
+
+                <b> Transmission: </b> <br>
+                The novel coronavirus (COVID-19) is a highly contagious disease that spreads by respiratory droplets emitted when you sneezing cough, or can be transmitted by touch after contact with a contaminated surface. <br> <br>
+
+                <b> Symptoms: </b> <br>
+                These symptoms are usually associated with a runny nose, sore throats, coughing, sneezing, congestion, headaches, and a low fever. <br> <br>
+
+                <b> Risk Groups: </b> <br>
+                Likewise, COVID-19 can have more serious outcomes in those with asthma, chronic respiratory conditions, or weakened immune systems. <br> <br> </p>
+        </div>
+    </div>
+
+    <br>
+
+    <p> Good strategies such as hand washing in combination with coughing and sneezing into tissues, or tissues made out of your elbow, and for contact with infected people is Public health measure(properties). <br> </p>
+
+<p> Key Takeaways: <br>
+             There is no cure; treatment is directed toward symptom relief --
+              rest, hydration, over-the-counter. <br> <br> <br> </p>
+
+    <h4>03 Comments</h4>
+    <br>
+    <div class="row">
+        <div class="col-1"> <img src="image/p-11.png" alt="" style= "width: 80px;
+            height: 80px;
+            border-radius: 50%;">
+        </div>
+
+<div class="col-11">
+    <h5>Nihan Doe</h5>
+    <p> Thanks for this informative post! <br>
+        I always wondered why i seem to catch colds more often in the winter. <br> </p>
+</div>
+
+
+    </div>
+
+    <br><br>
+    <div class="row">
+        <div class="col-2"> <img src="image/p-12.png" alt="" style= "width: 80px;
+            height: 80px;
+            border-radius: 50%;margin-left:100px;">
+        </div>
+
+<div class="col-10">
+    <h5>Enjy Taylor</h5>
+    <p> "Interesting Read! <br>
+          I didn't realize how common Rhinovirus is. We need to stay healthy." </p>
+</div>
+
+  </div>
+    
+  <br><br>
+    <div class="row">
+        <div class="col-1"> <img src="image/p-13.png" alt="" style= "width: 80px;
+            height: 80px;
+            border-radius: 50%;">
+        </div>
+
+<div class="col-11">
+    <h5>Karim Doe</h5>
+    <p>  I travel alot for work, and i'm constantly exposed to different games. <br>
+         These tips will definitely come in handy on the road. <br>
+         "Thanks for the recovery timeline!" </p>
+</div>
+
+
+<h3>Leave A Comment</h3>
+<br> <br> <br> <br> 
+<div class="row">
+<div class="col-6">
+    <input type="text" placeholder="NAME" class="form-control" style="border: none;border-bottom: #1f89ba solid 1px;">
+</div>
+
+<div class="col-6">
+    <input type="email" placeholder="EMAIL" class="form-control" style="border: none;border-bottom: #1f89ba solid 1px;">
+</div>
+
+</div>
+
+<br><br><br><br>
+
+<input type="text" placeholder="Your Comment" class="form-control" style="border: none;border-bottom: #1f89ba solid 1px;">
+ <div><br></div>
+
+<button type="button" class="btn light" style="  font-family: 'san-franciso'; 
+ padding: 10px; padding-left: 20px; padding-right: 20px; color: white;border: white solid 1px;"> 
+ Submit Comment
+</button>
+
+    </div>
+</div>
+<br>
+
+<footer class="container-fluid" >
+  <div class="row " style="padding:20px; background-image: linear-gradient(to right, #1f89ba , #5ecdde);color: white;height: auto" >
+      <div class="col">
+          <div class="row">
+              <div class="col-3">
+          <img src="abc.png" alt="">
+      </div>
+      <div class="col-9">
+          <h4 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;padding-top: 20px;"> Vertex System</h4><br>
+      </div>
+      </div>
+        
+
+
+          <h6>Vertex system is a non goverment organisation</h6>
+          <p>
+ viruses are attacking the man kind every now then with different form and types this website is desined to educate our people about viruses.
+          </p>
+          
+
+
+      </div>
+  
+      <div class="col">
+        <h4 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; padding-left: 30px;margin-top: 20px;">Location</h4><br>
+       <div style="padding-left: 30px;">
+        <p><i class="fa fa-caret-right"></i>   Our Center</p>
+        <p><i class="fa fa-caret-right"></i>   Saylani Ghulshan Cumpus </p>
+        <p><i class="fa fa-caret-right"></i>   (+92) 313 1489711</p>
+        <p><i class="fa fa-caret-right"></i>   @infovertexsystem.com</p>
+        
+    </div>
+    </div>
+      
+ 
+     <div class="col">
+        <h4 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; padding-left: 80px;margin-top: 20px;">Navigate</h4><br>
+       <div style="padding-left: 80px;">
+       <p><i class="fa fa-caret-right"></i>   <a href="index.html" style="color: #f3fffe;text-decoration: none;"> Home </p></a>
+        <p><i class="fa fa-caret-right"></i>  <a href="about.html"  style="color: #f3fffe;text-decoration: none;">About</a> </p>
+        <p><i class="fa fa-caret-right"></i>  <a href="about.html"  style="color: #f3fffe;text-decoration: none;">Contact Us</a></p>
+        <p><i class="fa fa-caret-right"></i> <a href="about.html"  style="color: #f3fffe;text-decoration: none;">Doctor</a> </p>
+    </div>
+    </div>
+  
+
+  <div class="col" style="padding-left: 90px;">
+      <h4 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;margin-left: 20px;margin-top: 20px; ">Social Contact </h4>
+    <div style="padding-right: 100px;margin-top: 30px;">
+      <ul ><i class="fa fa-facebook-square" aria-hidden="true" ></i> Facebook</ul>
+      <ul><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</ul>
+      <ul><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</ul>
+      <ul><i class="fa fa-whatsapp" aria-hidden="true"></i> Whatsapp</ul>
+      
+     
+      </div>
+      
+<br>
+  </div>
+  <hr>
+  <p style="text-align: center;">All Right Reserved &copy; Vertex System </p>
+
+</div>
+
+ 
+</footer>
+
+
+</body>
+
+</html>
